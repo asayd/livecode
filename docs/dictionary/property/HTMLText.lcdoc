@@ -6,7 +6,8 @@ Syntax: set the HTMLText of [<chunk> of] <field> to <htmlString>
 
 Syntax: get the [effective] HTMLText of [<chunk> of] <field> 
 
-Summary: Specifies the contents of a <field>, with its text <format|formatting> represented as <HTML> tags and special characters represented as <HTML> entities.
+Summary: Specifies the contents of a <field>, including all text <textStyle|styles> and paragraph <format|formatting>, represented 
+as <HTML> tags and special characters represented as <HTML> entities.
 
 Associations: field
 
@@ -28,21 +29,52 @@ write the HTMLText of field "Story" to file myWebFile
 Example:
 put the effective htmlText of field "description"
 
+Example:
+set the HTMLText of field "display" to URL "http://www.server.com/somepage.html"
+
 Description:
-Use the <HTMLText> <property> to display text from a web page in a <field(keyword)>, or copy or export a <field(object)|field's> contents with the text <format|formatting> intact.
+Use the <HTMLText> <property> to copy or export a <field(object)|field's> contents with the text and paragraph <format|formatting> intact. 
+Setting the <HTMLText> of a field can also be a way of displaying simple <HTML>-formatted text from a web page or external file. 
+It should be emphasized that the <HTMLText> property is not a complete <HTML> rendering engine. 
+Instead, it can be understood as a way to faithfully represent the entire contents of a field, including text and paragraph formatting, 
+using HTML-style tags and attributes.
+
 The <HTMLText> of a <field(keyword)> or <chunk> is a <string>.
-If the effective keyword is specified the <htmlText> property retuns the html of the field with explicit formatting. For example if the <textFont> of the stack is set this is not included in the <htmlText> but is inlcuded in the effective <htmlText>.
+If the <effective> keyword is specified the <htmlText> property returns the <HTML> of the field with explicit formatting. 
+For example if the <textFont> of the stack is set this is not included in the <HTMLText> but is inlcuded in the <effective> <HTMLText>.
 
-The <HTMLText> <property> is a representation of the styled text of the <field(keyword)>. LiveCode uses a subset of <HTML> tags that includes font, size, style, and text color information.
+The <HTMLText> <property> is a representation of the styled text and paragraph formatting of the <field(keyword)>. 
+LiveCode uses a subset of <HTML> tags that includes font, size, style, and text color information, along with paragraph alignment, 
+indentation, spacing, padding and other information.
 
-Setting the <HTMLText> of a <field(keyword)> (or a <chunk> of a <field(keyword)>) sets both the text contents and the style attributes corresponding to the tags listed below. (Other tags are ignored.)
+<set(command)|Setting> the <HTMLText> of a <field(keyword)> (or a <chunk> of a <field(keyword)>) sets both the text contents and 
+the style attributes corresponding to the tags listed below. (Other tags are ignored.)
 
-Getting the <HTMLText> <property> reports a <string> consisting of the text of the <field(keyword)> (or <chunk> of a <field(keyword)>), with any font, size, style, or color <properties> embedded in the text in the form of the tags listed below.
+<get(command)|Getting> the <HTMLText> <property> reports a <string> consisting of the text of the <field(keyword)> (or <chunk> of 
+a <field(keyword)>), with any font, size, style, or color <properties> embedded in the text in the form of the tags listed below.
 
 The tags translate as follows:
 
 &lt;p&gt; &lt;/p&gt;
-Encloses a line of text. (Blank lines are also enclosed in &lt;p&gt; &lt;/p&gt;.)
+Encloses a line of text. (Blank lines are also enclosed in &lt;p&gt; &lt;/p&gt;.) 
+These properties are represented as attributes of the &lt;p&gt; tag:
+* align="left|center|right" appears if an <textAlign|alignment> has been applied to the line.
+* firstindent="N" (where in is an integer representing number of pixels) appears if the <firstindent> has been set for the line.
+* leftindent="N" appears if the <leftindent> has been set for the line.
+* rightindent="N" appears if the <rightindent> has been set for the line.
+* spaceabove="N" appears if the <spaceabove> has been set for the line.
+* spacebelow="N" appears if the <spacebelow> has been set for the line.
+* tabstops="N" appears if <tabstops> have been set for the line.
+* bgcolor="colorSpec" if a <backgroundColor> has been set for the line.
+* borderwidth="N" if a <borderWidth> has been set for the line.
+* hgrid="true|false" if the <vGrid> property has been set for the line.
+* vgrid="true|false" if the <hGrid> property has been set for the line.
+* bordercolor="colorSpec" if a <borderColor> has been set for the line.
+* dontwrap="true|false" if the <dontWrap> property has been set for the line.
+* padding="N" if the <padding> has been set for the line.
+* hidden="true|false" if the <hidden> property has been set for the line.
+
+<HTML>-style colorSpec consists of a hash mark (#) followed by three 2-digit hexadecimal numbers, one each for red, green, and blue.
 
 &lt;sub&gt; &lt;/sub&gt;
 Encloses text whose textShift is a positive <integer>. (The &lt;sub&gt; tag is not nested for additional levels of subscription: it appears once for a run of subscripted text, regardless of the value of the <textShift>.)
@@ -87,7 +119,7 @@ pointSize | textSize
 * color="colorSpec" appears if the <foregroundColor> is not the <default>.
 * bgcolor="colorSpec" appears if the backgroundColor is not the <default>.
 
-When getting the <htmlText> of a <field(keyword)>, a color is represented as an <HTML> -style color consisting of a hash mark (#) followed by three 2-digit <hexadecimal> numbers, one for each of red, green, and blue.
+When getting the <HTMLText> of a <field(keyword)>, a color is represented as an <HTML> -style color consisting of a hash mark (#) followed by three 2-digit <hexadecimal> numbers, one for each of red, green, and blue.
 
 &lt;a&gt; &lt;/a&gt;
 Encloses text whose textStyle is "link" or whose <linkText> <property> is not empty. If the <textStyle> of the text contains "link", the <linkText> is included as the value of the "href" attribute. Otherwise, it is included as the value of the "name" attribute.
