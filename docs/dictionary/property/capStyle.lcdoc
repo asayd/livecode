@@ -28,11 +28,11 @@ set the capStyle of graphic "newline" to "butt"
 
 Value (enum):
 
--   round: Lines are ended by a half-circle centred at the end-point of
-    the line. This is the default.
--   butt: No cap is added.
--   square: The edge is extended beyond the end-point by half the line
-    width. 
+- round: Lines are ended by a half-circle centred at the end-point of 
+the line. This is the default.
+- butt: No cap is added.
+- square: The edge is extended beyond the end-point by half the line 
+width. 
 
 
 Description:
