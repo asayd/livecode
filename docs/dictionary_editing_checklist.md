@@ -3,9 +3,9 @@ Ali has provided some great documentation for editing LiveCode dictionary entrie
 
 * You've read [Ali's blog post](https://livecode.com/putting-the-you-in-documentation/ "Putting the YOU in Documentation"), "Putting the YOU in Documentation".
 
-* You've perused the [Contributing to LiveCode Documentation](https://github.com/livecode/livecode/blob/community-docs/docs/contributing_to_docs.md) guide, so you have a general idea of what to do and how to do it. The section on [Learning the Basics of Github](https://github.com/livecode/livecode/blob/community-docs/docs/contributing_to_docs.md#using-the-github-web-interface) is especially important.
+* You've perused the [Contributing to LiveCode Documentation](https://github.com/livecode/livecode/blob/develop/docs/contributing_to_docs.md) guide, so you have a general idea of what to do and how to do it. The section on [Learning the Basics of Github](https://github.com/livecode/livecode/blob/develop/docs/contributing_to_docs.md#using-the-github-web-interface) is especially important.
 
-* You've reviewed the [LiveCode Documentation Format Reference](https://github.com/livecode/livecode/blob/community-docs/docs/guides/LiveCode%20Documentation%20Format%20Reference.md), so you are basically familiar with the format of a dictionary entry.
+* You've reviewed the [LiveCode Documentation Format Reference](https://github.com/livecode/livecode/blob/develop/docs/guides/LiveCode%20Documentation%20Format%20Reference.md), so you are basically familiar with the format of a dictionary entry.
 
 If you're like me, by this point your head is swimming with all the information you have to remember. Still, I decided to jump right in and give it a shot. Along the way I made some blunders, but thanks to the patient guidance of Ali, Peter, and some other community members I have gotten the hang of it. Since there are a lot of details to remember, and since I'm a checklist kind of guy, I created this checklist-style guide for myself to refer to as I review a dictionary entry. Much of this information is taken from the documents referred to above, and much is taken from my own experience making changes and interacting with the LiveCode team.
 
@@ -147,7 +147,7 @@ Once the document is open for editing you can begin to make changes. You probabl
 #### [ ] Hard wrap lines to 72 characters for easier reading in the Github interface.
 	
 ### [ ] Submit the changes
-This is covered thoroughly in [Contributing to LiveCode Documentation](https://github.com/livecode/livecode/blob/community-docs/docs/contributing_to_docs.md). As a reminder here is a summary of the steps for submitting your changes.
+This is covered thoroughly in [Contributing to LiveCode Documentation](https://github.com/livecode/livecode/blob/develop/docs/contributing_to_docs.md). As a reminder here is a summary of the steps for submitting your changes.
 
 Directly beneath the editing section there is a **Propose file change** section.
  
@@ -159,4 +159,4 @@ Directly beneath the editing section there is a **Propose file change** section.
   - Click **Create Pull Request**.
   - Click **Create Pull Request** again.
   
-  - [Add bug fix release note](https://github.com/livecode/livecode/blob/community-docs/docs/contributing_to_docs.md#user-content-adding-a-bug-fix-release-note) if needed.
+  - [Add bug fix release note](https://github.com/livecode/livecode/blob/develop/docs/contributing_to_docs.md#user-content-adding-a-bug-fix-release-note) if needed.
