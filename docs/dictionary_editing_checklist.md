@@ -74,7 +74,7 @@ Once the document is open for editing you can begin to make changes. You probabl
 	- Check to make sure this list seems accurate.
 *	Examples
 	- There may be any number of Example elements. It never hurts to add an example or two if you think it will help to better illustrate the usage of a language term.
-	- Examples should conform to [new guidelines for Instructiveness](https://github.com/livecode/livecode/blob/community-docs/docs/contributing_to_docs.md#instructiveness).
+	- Examples should conform to [new guidelines for Instructiveness](https://github.com/livecode/livecode/blob/develop/docs/contributing_to_docs.md#instructiveness).
 	- Important things to check in examples:
 	   + Make sure the example could be pasted into the message box or an object script and "just work".
 	   + Always assume strict compilation mode is on, thus all variables should be declared.
