@@ -166,4 +166,4 @@ Directly beneath the editing section there is a **Propose file change** section.
   - Click **Create Pull Request**.
   - Click **Create Pull Request** again.
   
-  - [Add bug fix release note](https://github.com/livecode/livecode/blob/develop/docs/contributing_to_docs.md#user-content-adding-a-bug-fix-release-note) if needed.
+  - [Add bug fix release note](https://github.com/livecode/livecode/blob/develop/docs/contributing_to_docs.md#Adding-a-bug-fix-release-note) if needed. (There is a section on this in the Contributing to LiveCode Documentation document.)
