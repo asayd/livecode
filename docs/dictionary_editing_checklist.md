@@ -87,8 +87,8 @@ Once the document is open for editing you can begin to make changes. You probabl
 
 > prompt(string):A text string instructing the user what to do.
 
-	- Use of parameter names in other elements, such as Description, should be enclosed in &lt;angle brackets&gt;.  
-	- Look for conflicts between parameter names and referenced/linked vocabulary; e.g. if a Syntax element uses *property* as a parameter name, it may be best to change it to something like *propertyName*.
+   - Use of parameter names in other elements, such as Description, should be enclosed in &lt;angle brackets&gt;.  
+   - Look for conflicts between parameter names and referenced/linked vocabulary; e.g. if a Syntax element uses *property* as a parameter name, it may be best to change it to something like *propertyName*.
 	
 * Value or Returns
   - These two elements are mutually exclusive; only one should appear in any document.
