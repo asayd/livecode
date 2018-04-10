@@ -60,14 +60,18 @@ Once the document is open for editing you can begin to make changes. You probabl
 *	Synonyms (if there are any)
 	- Check for obvious omissions. For example, synonyms for the `return` entry should be `cr,linefeed,lf`.
 *	Associated (One of *object type*, glossary, *library designation*, or widget)
-  - Check for missing associations, i.e., language elements that only apply to certain object types or are only available in certain libraries. These are most commonly seen for property and message entries. For example:
+  	- Check for missing associations, i.e., language elements that only apply to certain object types or are only available in certain libraries. These are most commonly seen for property and message entries. For example:
      + the `duration` property should have an association of `player`
      + the `linkClicked` message should have an association of `field`
      + the `angle` property should have associations of `graphic,image`
 *	Introduced 
   	- In an existing entry this should be there already; make sure it looks like a valid LiveCode version number; e.g. 1.0 or 5.5.
-*	OS (Check to make sure this list seems accurate.) Choices are mac, windows, linux, ios, android, html5.
-*	Platforms (Check to make sure this list seems accurate.) Choices are desktop, server, mobile.
+*	OS 
+	- Choices are mac, windows, linux, ios, android, html5.
+	- Check to make sure this list seems accurate and complete. I have noticed that *many* entries are missing the html5 designation.   
+*	Platforms 
+	- Choices are desktop, server, mobile.
+	- Check to make sure this list seems accurate.
 *	Examples
 	- There may be any number of Example elements. It never hurts to add an example or two if you think it will help to better illustrate the usage of a language term.
 	- Examples should conform to [new guidelines for Instructiveness](https://github.com/livecode/livecode/blob/community-docs/docs/contributing_to_docs.md#instructiveness).
