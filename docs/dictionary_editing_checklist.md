@@ -66,8 +66,8 @@ Once the document is open for editing you can begin to make changes. You probabl
      + the `angle` property should have associations of `graphic,image`
 *	Introduced 
   	- In an existing entry this should be there already; make sure it looks like a valid LiveCode version number; e.g. 1.0 or 5.5.
-*	OS (Check to make sure this list seems accurate.)
-*	Platforms (Check to make sure this list seems accurate.)
+*	OS (Check to make sure this list seems accurate.) Choices are mac, windows, linux, ios, android, html5.
+*	Platforms (Check to make sure this list seems accurate.) Choices are desktop, server, mobile.
 *	Examples
 	- There may be any number of Example elements. It never hurts to add an example or two if you think it will help to better illustrate the usage of a language term.
 	- Examples should conform to [new guidelines for Instructiveness](https://github.com/livecode/livecode/blob/community-docs/docs/contributing_to_docs.md#instructiveness).
