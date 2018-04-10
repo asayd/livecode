@@ -83,13 +83,11 @@ Once the document is open for editing you can begin to make changes. You probabl
     - All parameter names shown in the Syntax element should be listed and explained in the Parameters element in this format:
  *parameter name*(*type*): *Explanation.* 
  
-    For example:
+       For example:
 
-      > prompt(string):A text string instructing the user what to do.
-
-      > - Use of parameter names in other elements, such as Description, should be enclosed in &lt;angle brackets&gt;.
-  
-      > - Look for conflicts between parameter names and referenced/linked vocabulary; e.g. if a Syntax element uses *property* as a parameter name, it may be best to change it to something like *propertyName*.
+> prompt(string):A text string instructing the user what to do.
+> - Use of parameter names in other elements, such as Description, should be enclosed in &lt;angle brackets&gt;.  
+> - Look for conflicts between parameter names and referenced/linked vocabulary; e.g. if a Syntax element uses *property* as a parameter name, it may be best to change it to something like *propertyName*.
 	
 * Value or Returns
   - These two elements are mutually exclusive; only one should appear in any document.
