@@ -80,7 +80,10 @@ Once the document is open for editing you can begin to make changes. You probabl
 	   + Always assume strict compilation mode is on, thus all variables should be declared.
 
 * Parameters 
- - All parameter names shown in the Syntax element should be listed and explained in the Parameters element in the format parameter name(type): Description. For example:
+ - All parameter names shown in the Syntax element should be listed and explained in the Parameters element in this format:
+ parameter name(type): Explanation. 
+ 
+ For example:
 
       >prompt(string):A text string instructing the user what to do.
 
