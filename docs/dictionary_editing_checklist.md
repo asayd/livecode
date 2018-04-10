@@ -65,7 +65,7 @@ Once the document is open for editing you can begin to make changes. You probabl
      + the `linkClicked` message should have an association of `field`
      + the `angle` property should have associations of `graphic,image`
 *	Introduced 
-  - In an existing entry this should be there already; make sure it looks like a valid LiveCode version number; e.g. 1.0 or 5.5.
+  	- In an existing entry this should be there already; make sure it looks like a valid LiveCode version number; e.g. 1.0 or 5.5.
 *	OS (Check to make sure this list seems accurate.)
 *	Platforms (Check to make sure this list seems accurate.)
 *	Examples
